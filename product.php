@@ -281,7 +281,6 @@ include 'config.php';
 
                                     <?php endforeach  ?>
 
-
                                     <div class="dropdown-item d-flex align-items-center">
 
 
@@ -299,98 +298,99 @@ include 'config.php';
 
                                         </div>
 
-
                                     </div>
-                                    <div class="card-info-btn " style="text-align:right; margin: 10px 10px 10px 10px">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal"
-                                            data-target="#exampleModalLong">Thanh toán</button>
-                                        <form action="rentproduct.php" method="post" enctype="multipart/form-data"
-                                            class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog"
-                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle">
-                                                            Thông
-                                                            tin khách hàng thuê </h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-
-                                                        <div class="card-body_item">
-                                                            <label for="">Nhập tên khách
-                                                                hàng<sup>*</sup></label>
-                                                            <input class="card-body_input" type="text" id="namecus"
-                                                                name="namecus" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">Địa chỉ<sup>*</sup></label>
-                                                            <input class="card-body_input" type="text" id="address"
-                                                                name="address" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">Ngày thuê xe<sup>*</sup></label>
-                                                            <input class="card-body_input" type="datetime-local"
-                                                                id="datestart" name="datestart" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">Ngày trả xe<sup>*</sup></label>
-                                                            <input class="card-body_input" type="datetime-local"
-                                                                id="datefinish" name="datefinish" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">CMND mặt trước<sup>*</sup></label>
-                                                            <input class="card-body_input" type="file" id="frontimg"
-                                                                name="frontimg" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">CMND mặt sau<sup>*</sup></label>
-                                                            <input class="card-body_input" type="file" id="backimg"
-                                                                name="backimg" required>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">Hình thức thanh
-                                                                toán<sup>*</sup></label>
-                                                            <select name="select_item-bank" id="select_item-bank">
-                                                                <option value="Thanh toán trực tuyến">Thanh
-                                                                    toán
-                                                                    trực tuyến</option>
-                                                                <option value="Thanh toán trực tiếp">Thanh
-                                                                    toán
-                                                                    trực tiếp</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="card-body_item">
-                                                            <label for="">Ghi chú<sup>*</sup></label>
-                                                            <input style="margin-left:1px" class="card-body_input"
-                                                                type="text" id="note" name="note" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-dismiss="modal">Đóng</button>
-                                                        <button type="submit" id="submit" name="submit"
-                                                            class="btn btn-primary">Xác nhận</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div style="text-align:right;margin: 10px 10px 10px 10px"><button type="button"
+                                            class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModalLong2">Thanh toán</button>
                                         <a href="product.php">
                                             <button type="button" class="btn btn-secondary">Quay
                                                 lại</button>
-                                        </a>
-                                    </div>
-
-
-
-
+                                        </a></div>
 
                                 </div>
+
+                                <form action="rentproduct.php" method="post" enctype="multipart/form-data"
+                                    class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Thông
+                                                    tin khách hàng thuê </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="card-body_item">
+                                                    <label for="">Nhập tên khách
+                                                        hàng<sup>*</sup></label>
+                                                    <input class="card-body_input" type="text" id="namecus"
+                                                        name="namecus" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">Địa chỉ<sup>*</sup></label>
+                                                    <input class="card-body_input" type="text" id="address"
+                                                        name="address" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">Ngày thuê xe<sup>*</sup></label>
+                                                    <input class="card-body_input" type="datetime-local" id="datestart"
+                                                        name="datestart" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">Ngày trả xe<sup>*</sup></label>
+                                                    <input class="card-body_input" type="datetime-local" id="datefinish"
+                                                        name="datefinish" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">CMND mặt trước<sup>*</sup></label>
+                                                    <input class="card-body_input" type="file" id="frontimg"
+                                                        name="frontimg" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">CMND mặt sau<sup>*</sup></label>
+                                                    <input class="card-body_input" type="file" id="backimg"
+                                                        name="backimg" required>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">Hình thức thanh
+                                                        toán<sup>*</sup></label>
+                                                    <select name="select_item-bank" id="select_item-bank">
+                                                        <option value="Thanh toán trực tuyến">Thanh
+                                                            toán
+                                                            trực tuyến</option>
+                                                        <option value="Thanh toán trực tiếp">Thanh
+                                                            toán
+                                                            trực tiếp</option>
+                                                    </select>
+                                                </div>
+                                                <div class="card-body_item">
+                                                    <label for="">Ghi chú<sup>*</sup></label>
+                                                    <input style="margin-left:1px" class="card-body_input" type="text"
+                                                        id="note" name="note" required>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Đóng</button>
+                                                <button type="submit" id="submit" name="submit"
+                                                    class="btn btn-primary">Xác nhận</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+
+
+
                         </li>
-                        <div class="topbar-divider d-none d-sm-block"></div>
+
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
@@ -415,7 +415,7 @@ include 'config.php';
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Nhật ký hoạt động
                                 </a>
-                                <div class="dropdown-divider"></div>
+
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Đăng xuất
